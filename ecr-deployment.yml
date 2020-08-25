@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: pythonrs
+spec:
+  replicas: 2
+  selector: 
+    matchLabels:
+      app: pythonapp
+  strategy:
+    type: Recreate	
+  template: 
+    metadata:
+      name: pythonapppod
+      labels: 
+        app: pythonapp
+    spec: 
+      imagePullSecrets:
+      - name: regcred
+      containers:
+      - name: pythonappcontainer
+        image: 792606085262.dkr.ecr.us-east-1.amazonaws.com/githubactions:c5da3053614bef8f91c4f0544c3be8d7d2f9c85e
+        imagePullPolicy: Always
+        ports:
+        - name: javawebapp
+          containerPort: 5000
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: pythonappelb
+spec:
+  selector:
+    app: pythonapp
+  type: LoadBalancer
+  ports:
+  - port: 5000
+    targetPort: 5000
