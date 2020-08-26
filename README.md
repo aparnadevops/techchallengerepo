@@ -76,15 +76,15 @@
     Cloud firewalls.
     
     
-  > Technical challenge
+   Technical challenge
   
-  > Write code in the files app.py and requirement.txt files
-  > Write a Dockerfile to create Docker image
-  > Write the code in githubactions for creating and pushing the docker image into AWS ECR
-  > Create EKS cluster 
-  > Pull docker image from ECR to kubernetes cluster
-  > Write yml files for secrets and deployment
-  > Excute the yaml files
+   Write code in the files app.py and requirement.txt files
+   Write a Dockerfile to create Docker image
+   Write the code in githubactions for creating and pushing the docker image into AWS ECR
+   Create EKS cluster 
+   Pull docker image from ECR to kubernetes cluster
+   Write yml files for secrets and deployment
+   Excute the yaml files
     
   
   
