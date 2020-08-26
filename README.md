@@ -78,13 +78,13 @@
     
    Technical challenge
   
-   Write code in the files app.py and requirement.txt files
-   Write a Dockerfile to create Docker image
-   Write the code in githubactions for creating and pushing the docker image into AWS ECR
-   Create EKS cluster 
-   Pull docker image from ECR to kubernetes cluster
-   Write yml files for secrets and deployment
-   Excute the yaml files
+ 1.  Write code in the files app.py and requirement.txt files
+ 2.  Write a Dockerfile to create Docker image
+ 3.  Write the code in githubactions for creating and pushing the docker image into AWS ECR
+ 4.  Create EKS cluster 
+ 5.  Pull docker image from ECR to kubernetes cluster
+ 6.  Write yml files for secrets and deployment
+ 7.  Excute the yaml files
     
   
   
